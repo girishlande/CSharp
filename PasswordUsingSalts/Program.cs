@@ -9,6 +9,13 @@ using System.Text;
 // If you must convert a hash to its string representation you can use 
 // Convert.ToBase64String and Convert.FromBase64String to convert it back
 
+
+// Method 
+// When user will sign up , he will provide us password.
+// This password needs to be stored in Hash format along with salt 
+// When user logs in to system we fetch Password hash and salt from database,
+// recompute password hash using input password and database salt and compare with database password hash
+
 namespace ConsoleApp7
 {
     class Program
@@ -50,9 +57,12 @@ namespace ConsoleApp7
         {
             Program program = new Program();
             string password = "girish123";
+
+            // Store following binary blobs in database and retrieve from database when necessary 
             program._passwordSalt = CreateSalt(8);
             program._passwordHash = Hash(password, program._passwordSalt);
 
+            // Accept user password 
             string inputpwd = Console.ReadLine();
             bool password_match = program.ConfirmPassword(inputpwd);
             if (password_match)
