@@ -72,4 +72,10 @@ namespace WebApplication10.Controllers
 e. g http:12345:/api/students
 (this will invoke get operation)
 
-Test all four operations using POSTMan software 
+Test all four operations using POSTMan software using following argument to add data
+Add following in Body 
+{
+	"Id":4,
+	"Name":"Pawar",
+	"City":"Thane"
+}
