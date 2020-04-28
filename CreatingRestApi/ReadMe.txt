@@ -79,3 +79,9 @@ Add following in Body
 	"Name":"Pawar",
 	"City":"Thane"
 }
+
+10. You Don't need POST man to test you api. You can install swashbuckle from nuget package manager 
+and then hit following address
+http:12345:/swagger
+
+
