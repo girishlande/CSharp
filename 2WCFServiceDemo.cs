@@ -2,7 +2,7 @@
 For any service we have to follow 3 step process
 1. Creating service
 2. Hosting service 
-3. Consuming service
+3. Consuming service - writing a client 
 
 Following code is step 1 . Creating service
 Basically we create interface first which declares what all apis should be supported
