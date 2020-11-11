@@ -1,0 +1,32 @@
+﻿<Page x:Class="WpfApp3.Page3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp3"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page3">
+
+    <Grid Margin="0,0,57,135">
+        <WrapPanel HorizontalAlignment="Left" Height="214" Margin="64,34,0,0" VerticalAlignment="Top" Width="671">
+            <Button Content="Button" Width="75"/>
+            <Button Content="Button" Width="75"/>
+            <Button Content="Button" Width="75"/>
+            <Button Content="Button" Width="75"/>
+            <Button Content="Button" Width="75"/>
+            <Button Content="Button" Width="75"/>
+            <Button Content="Button" Width="75"/>
+            <Button Content="Button" Width="75"/>
+            <Button Content="Button" Width="75"/>
+            <Button Content="Button" Width="75"/>
+            <Button Content="Button" Width="75"/>
+            <Button Content="Button" Width="75"/>
+            <Button Content="Button" Width="75"/>
+            <Button Content="Button" Width="75"/>
+            
+        </WrapPanel>
+        <TextBlock HorizontalAlignment="Left" Margin="64,109,0,0" TextWrapping="Wrap" Text="THIS IS WRAP PANEL" VerticalAlignment="Top" Height="66" Width="529" FontSize="50"/>
+
+    </Grid>
+</Page>

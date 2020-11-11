@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,-387,-215">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="299*"/>
+            <ColumnDefinition Width="102*"/>
+        </Grid.ColumnDefinitions>
+        <Frame x:Name="frame1" Content="Frame" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="351" Margin="53,29,0,0" VerticalAlignment="Top" Width="566" Grid.ColumnSpan="2" Navigated="frame1_Navigated" Grid.Column="1"/>
+        <Button Content="Page1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Margin="21,29,0,0" Height="22" Click="Button_Click" Grid.ColumnSpan="2"/>
+        <Button Content="Page2&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Margin="21,64,0,0" Height="21" Click="Button_Click_1" Grid.ColumnSpan="2"/>
+        <Button Content="Page3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Margin="21,100,0,0" Height="22" Click="Button_Click_2" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>

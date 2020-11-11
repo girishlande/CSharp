@@ -5,13 +5,15 @@ using System.Timers;
 
 namespace ConsoleApp3
 {
-    public class MyTimer 
+    public class MyTimer : IDisposable
     {
         private System.Timers.Timer t1 { get; set; }
-
+        public int mId { get; set; }
+        static int counter = 1;
         public MyTimer()
         {
-            Console.WriteLine("Girish:MyTimer constructor called");
+            mId = counter++;
+            Console.WriteLine("Girish:MyTimer constructor called ID:" + mId);
             CreateTimer();
         }
 
@@ -25,12 +27,18 @@ namespace ConsoleApp3
 
         private void f1(object sender, ElapsedEventArgs e)
         {
-            Console.WriteLine("Girish:Timer elapsed:"+ DateTime.Now.ToString("h:mm:ss tt"));
+            Console.WriteLine("Girish:Timer elapsed:" + DateTime.Now.ToString("h:mm:ss tt"));
+        }
+
+        public void Dispose()
+        {
+            t1.Elapsed -= f1;
+            t1.Dispose();
         }
 
         ~MyTimer()
         {
-            Console.WriteLine("Girish:MyTimer destructor called");
+            Console.WriteLine("Girish:MyTimer destructor called ID:" + mId);
         }
     }
 
@@ -51,13 +59,31 @@ namespace ConsoleApp3
             Console.ReadLine();
             p1.InitializeEventCallback();
             Console.ReadLine();
+            p1.Dispose();
+            Console.WriteLine("Calling Garbage Collector");
+            System.GC.Collect();
+            GC.WaitForPendingFinalizers();
+            Console.ReadLine();
         }
 
         public void InitializeEventCallback()
         {
+            Dispose();
             m1 = new MyTimer();
+            InvokeGarbageCollection();
+        }
+
+        public void Dispose()
+        {
+            if (m1 != null)
+                m1.Dispose();
+        }
+
+        public void InvokeGarbageCollection()
+        {
             System.GC.Collect();
             GC.WaitForPendingFinalizers();
         }
+
     }
 }
