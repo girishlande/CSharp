@@ -11,6 +11,8 @@ Configuration file contains service name and method of connection
 
 ServiceContract and OperationContract are attributes which specify the 
 information about the service. 
+DataContract can be used to serialise user defined objects.
+DataMember can be used for members of custom class. 
 
 Create new project
 Select WCF Service Library 
