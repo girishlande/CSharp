@@ -1,29 +1,33 @@
-
+// -----------------------------------------------------------
+// Introduction to WCF(Windows Communication Foundation)
+// -----------------------------------------------------------
 For any service we have to follow 3 step process
 1. Creating service
 2. Hosting service 
 3. Consuming service - writing a client 
 
-Following code is step 1 . Creating service
+// ---------------------------
+// step 1 . Creating service
+// ---------------------------
 Basically we create interface first which declares what all apis should be supported
 Then we write actual service class which is implementation of the interface. 
-Configuration file contains service name and method of connection 
+Configuration file contains service name and method of connection. 
 
-ServiceContract and OperationContract are attributes which specify the 
+[ServiceContract] and [OperationContract] are attributes which specify the 
 information about the service. 
-DataContract can be used to serialise user defined objects.
-DataMember can be used for members of custom class. 
+[DataContract] can be used to serialise user defined objects.
+[DataMember] can be used for members of custom class. 
 
-Create new project
-Select WCF Service Library 
-Right click project . Select Add item-> interface. 
-Right click project. Select Add item-> Class
-Add attribute to interface [ServiceContract]
-Add attrivute to method as [OperationContract]
-Add implementation to the class 
+>Create new C# project
+>Select WCF Service Library 
+>Right click project . Select Add item-> interface. 
+>Right click project. Select Add item-> Class
+>Add attribute to interface [ServiceContract]
+>Add attribute to method as [OperationContract]
+>Add implementation to the class 
 
 Run . You will see WCF Client. 
-Visual studio will host this service and and consume as well. 
+NOTE :  Visual studio will host this service and and provide test client as well. 
 
 // --------------------------------------------------------------
 // Service Interface 
