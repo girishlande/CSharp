@@ -1,4 +1,5 @@
 
+// ----------------------------------------------------------------------------------------------
 // Following files demonstrates use of sessions in WCF. 
 // following decorator in Service class decides session mode. 
 // [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
@@ -7,6 +8,7 @@
 //      you can create multiple instances of client application and all the courses will get reflected here. 
 // 2. PerCall -> it will forget course immediately and you will not get any course 
 // 3. PerSession -> it will remember courses of given session and will return those courses only. 
+// ----------------------------------------------------------------------------------------------
 
 // ----------------
 // 1. Interface

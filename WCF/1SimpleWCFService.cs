@@ -56,7 +56,7 @@ namespace wcfGirishServiceLibrary
 }
 
 // ---------------------------------------------
-// Class used by service to return as data
+// Data Class used by service to return as data
 // ---------------------------------------------
 namespace wcfGirishServiceLibrary
 {
@@ -78,7 +78,7 @@ namespace wcfGirishServiceLibrary
 }
 
 // ----------------------------------------
-// Service implementation 
+// Service class implementation 
 // ----------------------------------------
 namespace wcfGirishServiceLibrary
 {

@@ -2,15 +2,16 @@
 // This explains how to create a simple WCF service. And write a client application to call service operations. 
 // Run it using Visual studio (VS will host service and will also provide a client application for testing operations)
 // This service can be consumed using another project.
+// Note : This explains how to use svcutil.exe
 // ---------------------------------------------------------------------------------------------------------------
 
 // --------------------------------------------------------------------
 // STEP 1: Creating service. Hosting and Running using Visual studio. 
 // --------------------------------------------------------------------
 > Create a new project in Visual studio 
-> Select C# and project type "Service" and WCF service library from the template
+> Select C# and project type "Service" and "WCF service library" from the template
 > Project name = GirishServiceLibrary and Solution name GirishServiceLibrary
-> BY default it will create IService1.cs and Service1.cs which is interface and concrete implmentation of the service.
+> BY default it will create IService1.cs and Service1.cs (which is interface) and concrete implmentation of the service.
 > Goto IService1 and delete default composite type
 > Rename IService1 to IGirishService
 > Keep only one operation contract GetData() 
@@ -100,7 +101,7 @@ int t = Convert.ToInt32(Console.ReadLine());
             client.Close();
 			
 
-// You can write a WPF client in similar fashion and send data to service which is entered by user. 
+// STEP 3: You can write a WPF client in similar fashion and send data to service which is entered by user. 
             private readonly Random _random = new Random();
             Console.WriteLine("Button is clicked:" + text1.Text);
             int t = _random.Next(1000); //Convert.ToInt32(text1.Text);  // take user input or generate random number 
@@ -131,20 +132,3 @@ int t = Convert.ToInt32(Console.ReadLine());
 
 
 
-
-
-
-
- Uri baseAddress = new Uri("http://localhost:6789");
- ServiceHost Sh = new ServiceHost(typeof(GirishService), baseAddress);
- ServiceEndpoint Se = Sh.AddServiceEndpoint(typeof(IGirishService), new WSHttpBinding(), baseAddress);
-
-  //ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
-  //smb.HttpGetEnabled = true;
-  //Sh.Description.Behaviors.Add(smb);
-
-  Sh.Open();
-  Console.WriteLine("Started.....");
-  Console.ReadLine();
-
-  Sh.Close();

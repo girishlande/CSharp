@@ -1,18 +1,17 @@
 
 // ------------------------------------------------------------------------
 //  Testing multiple calls to WCF service using multithreading
-//  Check how many calls it can handle. 
+//  Check how many calls it can handle. Hot service using visual studio 
 //  Result: It works pretty fine. It will give response slowly but it can handle calls 
 // ------------------------------------------------------------------------
 
 In this example we are creating WCF service and calling one of the api many times on thread execution. 
 
 // ------------------------
-// Service Interface
+// 1. Service Interface
 // ------------------------
 namespace GirishServiceLibrary
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
     public interface IGirishService
     {
@@ -23,11 +22,10 @@ namespace GirishServiceLibrary
 }
 
 // ------------------------
-// Service Class
+// 2. Service Class
 // ------------------------
 namespace GirishServiceLibrary
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
     public class GirishService : IGirishService
     {
         public string GetData(int value)
@@ -39,7 +37,7 @@ namespace GirishServiceLibrary
 }
 
 // -----------------
-// WPF Client 
+// 3. WPF Client 
 // -----------------
 
 namespace WpfApp1

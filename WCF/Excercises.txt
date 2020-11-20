@@ -1,0 +1,23 @@
+1. Create a WCF service and define multiple operations in it. 
+   Test using visual studio hosting and testing 
+	
+2. Create WCF service and host it using console application .
+   (Use declarative method that is USE app.config to specify end points )
+   Write client application in separate project and test the service.
+   
+3. Create WCF service and host it using console application.
+   (Use imperative method to create end points)
+   Write client application in separate project and test the service.
+   
+4. Create multiple instances of Client and check if data is being shared. 
+   Test concept of Sessions. Use different bindings for testing. 
+   
+5. Create WCF service with support for callback mechanism.
+   Write client application and add callback class. Check if callback is getting invoked. 
+  
+  
+6. Write WCF service and host it using windows service. 
+
+7. Write WCF service and invoke operation using multithreading. 
+   Use multiple instances of clients and Service should output which client it is referring to. 
+   

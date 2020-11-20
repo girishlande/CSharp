@@ -1,7 +1,9 @@
 
+// ----------------------------------------------------------------------------------------------
 // THis example demonstrates that you can create multiple bindings available for client. 
 // Depending upon which binding client choses he will get different output from the service 
 // Because some bindings support session data(for e.g TCP) and Some do not(for e.g HTTP).  
+// ----------------------------------------------------------------------------------------------
 
 // ------------------------
 // 1. Interface 
