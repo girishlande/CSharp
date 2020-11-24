@@ -56,6 +56,8 @@ namespace ConsoleApp3
         public void InitializeEventCallback()
         {
             m1 = new MyTimer();
+			
+			// Force Garbage collection 
             System.GC.Collect();
             GC.WaitForPendingFinalizers();
         }

@@ -1,6 +1,6 @@
 // -------------------------------------------------------------------------------
 // Hosting service in console application 
-// Create end point using App.config (declarative method ) 
+// Create end point using App.config (DECLARATIVE method ) 
 // -------------------------------------------------------------------------------
 
 > Create new C# project

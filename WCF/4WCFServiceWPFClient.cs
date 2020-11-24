@@ -1,7 +1,7 @@
 
 // ------------------------------------------------------------------------
 //  Testing multiple calls to WCF service using multithreading
-//  Check how many calls it can handle. Hot service using visual studio 
+//  Check how many calls it can handle. Host service using visual studio 
 //  Result: It works pretty fine. It will give response slowly but it can handle calls 
 // ------------------------------------------------------------------------
 

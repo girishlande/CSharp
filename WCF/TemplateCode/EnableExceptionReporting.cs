@@ -16,6 +16,7 @@
     ...
   </system.serviceModel>
 </configuration>
+
 Then apply the behavior to your service along these lines:
 
 <configuration>
