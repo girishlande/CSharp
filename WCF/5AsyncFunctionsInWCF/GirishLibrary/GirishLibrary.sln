@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GirishLibrary", "GirishLibrary\GirishLibrary.csproj", "{8CD1DB9A-89E2-46AA-837D-D4B028E5D188}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GirishHost", "GirishHost\GirishHost.csproj", "{0F36682B-0AE4-48F8-A5DF-AC34CF9D0E4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CD1DB9A-89E2-46AA-837D-D4B028E5D188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD1DB9A-89E2-46AA-837D-D4B028E5D188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD1DB9A-89E2-46AA-837D-D4B028E5D188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD1DB9A-89E2-46AA-837D-D4B028E5D188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F36682B-0AE4-48F8-A5DF-AC34CF9D0E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F36682B-0AE4-48F8-A5DF-AC34CF9D0E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F36682B-0AE4-48F8-A5DF-AC34CF9D0E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F36682B-0AE4-48F8-A5DF-AC34CF9D0E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FBCCB87-6C5B-4A8B-B553-B1BDAAFE5001}
+	EndGlobalSection
+EndGlobal

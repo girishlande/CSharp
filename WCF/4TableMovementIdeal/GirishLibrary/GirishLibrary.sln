@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GirishLibrary", "GirishLibrary\GirishLibrary.csproj", "{BC54D8F7-97A0-436A-AA4C-234B1839DACE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHostConsole", "ServiceHostConsole\ServiceHostConsole.csproj", "{50FCE1F3-65DB-41C0-900B-E6E5B640B464}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC54D8F7-97A0-436A-AA4C-234B1839DACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC54D8F7-97A0-436A-AA4C-234B1839DACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC54D8F7-97A0-436A-AA4C-234B1839DACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC54D8F7-97A0-436A-AA4C-234B1839DACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50FCE1F3-65DB-41C0-900B-E6E5B640B464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50FCE1F3-65DB-41C0-900B-E6E5B640B464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50FCE1F3-65DB-41C0-900B-E6E5B640B464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50FCE1F3-65DB-41C0-900B-E6E5B640B464}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {233B5FE1-F44A-45CE-8E38-C90AF98B9BE7}
+	EndGlobalSection
+EndGlobal

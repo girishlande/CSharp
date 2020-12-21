@@ -1,0 +1,11 @@
+D:\Test\WCFChatAplication\WCFWPFApp\ServiceAssembly\bin\Debug\ServiceAssembly.dll
+D:\Test\WCFChatAplication\WCFWPFApp\ServiceAssembly\bin\Debug\ServiceAssembly.pdb
+D:\Test\WCFChatAplication\WCFWPFApp\ServiceAssembly\obj\Debug\ServiceAssembly.csproj.CoreCompileInputs.cache
+D:\Test\WCFChatAplication\WCFWPFApp\ServiceAssembly\obj\Debug\ServiceAssembly.dll
+D:\Test\WCFChatAplication\WCFWPFApp\ServiceAssembly\obj\Debug\ServiceAssembly.pdb
+D:\git\CSharp\WCF\2WCFWPFChatApp\ServiceAssembly\bin\Debug\ServiceAssembly.dll
+D:\git\CSharp\WCF\2WCFWPFChatApp\ServiceAssembly\bin\Debug\ServiceAssembly.pdb
+D:\git\CSharp\WCF\2WCFWPFChatApp\ServiceAssembly\obj\Debug\ServiceAssembly.csproj.CoreCompileInputs.cache
+D:\git\CSharp\WCF\2WCFWPFChatApp\ServiceAssembly\obj\Debug\ServiceAssembly.dll
+D:\git\CSharp\WCF\2WCFWPFChatApp\ServiceAssembly\obj\Debug\ServiceAssembly.pdb
+D:\git\CSharp\WCF\2WCFWPFChatApp\ServiceAssembly\obj\Debug\ServiceAssembly.csprojAssemblyReference.cache

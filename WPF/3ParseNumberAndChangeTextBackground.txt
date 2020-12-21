@@ -1,0 +1,18 @@
+// Using textbox if the content is between some range then keep the color otherwise change the color 
+
+private void text1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox t1 = sender as TextBox;
+            string numberStr = t1.Text.ToString();
+            int number;
+            bool isParsable = Int32.TryParse(numberStr, out number);
+            if (isParsable)
+            {
+                Console.WriteLine("Text changed:" + t1.Text);
+                if (number >= 40 && number <= 80 )
+                    t1.Background = new SolidColorBrush(Colors.Green);
+                else
+                    t1.Background = new SolidColorBrush(Colors.Red);
+            }
+
+        }

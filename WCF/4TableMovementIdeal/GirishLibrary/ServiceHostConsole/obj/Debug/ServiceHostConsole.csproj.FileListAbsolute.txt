@@ -1,0 +1,11 @@
+D:\Test\GirishLibrary\ServiceHostConsole\bin\Debug\ServiceHostConsole.exe.config
+D:\Test\GirishLibrary\ServiceHostConsole\bin\Debug\ServiceHostConsole.exe
+D:\Test\GirishLibrary\ServiceHostConsole\bin\Debug\ServiceHostConsole.pdb
+D:\Test\GirishLibrary\ServiceHostConsole\bin\Debug\GirishLibrary.dll
+D:\Test\GirishLibrary\ServiceHostConsole\bin\Debug\GirishLibrary.pdb
+D:\Test\GirishLibrary\ServiceHostConsole\bin\Debug\GirishLibrary.dll.config
+D:\Test\GirishLibrary\ServiceHostConsole\obj\Debug\ServiceHostConsole.csprojAssemblyReference.cache
+D:\Test\GirishLibrary\ServiceHostConsole\obj\Debug\ServiceHostConsole.csproj.CoreCompileInputs.cache
+D:\Test\GirishLibrary\ServiceHostConsole\obj\Debug\ServiceHostConsole.csproj.CopyComplete
+D:\Test\GirishLibrary\ServiceHostConsole\obj\Debug\ServiceHostConsole.exe
+D:\Test\GirishLibrary\ServiceHostConsole\obj\Debug\ServiceHostConsole.pdb

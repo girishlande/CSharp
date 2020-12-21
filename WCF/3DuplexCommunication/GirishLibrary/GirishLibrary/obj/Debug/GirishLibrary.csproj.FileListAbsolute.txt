@@ -1,0 +1,7 @@
+D:\test\GirishLibrary\GirishLibrary\bin\Debug\GirishLibrary.dll.config
+D:\test\GirishLibrary\GirishLibrary\bin\Debug\GirishLibrary.dll
+D:\test\GirishLibrary\GirishLibrary\bin\Debug\GirishLibrary.pdb
+D:\test\GirishLibrary\GirishLibrary\obj\Debug\GirishLibrary.csprojAssemblyReference.cache
+D:\test\GirishLibrary\GirishLibrary\obj\Debug\GirishLibrary.csproj.CoreCompileInputs.cache
+D:\test\GirishLibrary\GirishLibrary\obj\Debug\GirishLibrary.dll
+D:\test\GirishLibrary\GirishLibrary\obj\Debug\GirishLibrary.pdb
