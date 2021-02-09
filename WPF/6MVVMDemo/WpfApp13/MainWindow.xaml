@@ -1,0 +1,52 @@
+﻿<Window x:Class="WpfApp13.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp13"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"></RowDefinition>
+            <RowDefinition Height="200"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Height="30" Grid.Row="0" Margin="2">
+            <Label Content="Roll:" Width="100" HorizontalContentAlignment="Right" Height="25"/>
+            <TextBox x:Name="RollText" Width="100" Height="25" Text="{Binding Roll}" VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="30" Grid.Row="1" Margin="2">
+            <Label Content="Name:" Width="100" HorizontalContentAlignment="Right" Height="25"/>
+            <TextBox x:Name="NameText" Width="100" Height="25"  Text="{Binding Name}" VerticalContentAlignment="Center" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Height="30" Grid.Row="2" Margin="2">
+            <Button x:Name="AddButton" Grid.Row="2" Content="Add Student" Width="100" Margin="100,0,0,0" Height="25" Command="{Binding AddCommand}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Height="30" Grid.Row="3" Margin="2">
+            <Button x:Name="ClearButton" Grid.Row="2" Content="Clear Student" Width="100" Margin="100,0,0,0" Height="25"  Command="{Binding ClearCommand}"/>
+        </StackPanel>
+
+    </Grid>
+
+        <Grid Grid.Row="1">
+            <ListView Width="Auto" ItemsSource="{Binding Students}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Roll" Width="100" DisplayMemberBinding="{Binding Roll}"></GridViewColumn>
+                        <GridViewColumn Header="Name" Width="200"  DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </Grid>
+</Window>

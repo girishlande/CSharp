@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp14.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp14"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="236.842" Width="429.778">
+    <Grid Margin="0,0,34,22">
+        <Button Content="CUT" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="137" Height="40" Click="CutClick"/>
+        <Button Content="COPY" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="137" Height="44" Click="CopyClick"/>
+        <Button Content="PASTE" HorizontalAlignment="Left" Margin="10,132,0,0" VerticalAlignment="Top" Width="137" Height="44" Click="PasteClick"/>
+        
+        <Button Content="DONE CUT" HorizontalAlignment="Left" Margin="210,10,0,0" VerticalAlignment="Top" Width="137" Height="40" Click="CutDoneClick"/>
+        <Button Content="DONE COPY" HorizontalAlignment="Left" Margin="210,69,0,0" VerticalAlignment="Top" Width="137" Height="44" Click="CopyDoneClick"/>
+        <Button Content="DONE PASTE" HorizontalAlignment="Left" Margin="210,132,0,0" VerticalAlignment="Top" Width="137" Height="44" Click="PasteDoneClick"/>
+
+    </Grid>
+</Window>

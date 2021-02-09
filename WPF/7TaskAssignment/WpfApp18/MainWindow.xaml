@@ -1,0 +1,74 @@
+﻿<Window x:Class="WpfApp18.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp18"
+        mc:Ignorable="d"
+        Title="Task Management" Height="450" Width="800" Background="Gray">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="440"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Grid Width="300" HorizontalAlignment="Left" Height="60">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Row="0">
+                <Label Content="System Up Time:" Width="150" Height="30" HorizontalContentAlignment="Right" FontSize="16" VerticalAlignment="Center"/>
+                <Label Content="{Binding SystemUpTime}" FontSize="16" Height="30" VerticalAlignment="Center" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="1">
+                <Label Content="#Tasks:" Width="150" Height="30" HorizontalContentAlignment="Right" FontSize="16" VerticalAlignment="Center"/>
+                <Label Content="{Binding TaskCounter}" FontSize="16"  Height="30" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
+            <Label Content="Task Name" Width="100" FontSize="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"></Label>
+            <TextBox Width="100" FontSize="16" Margin="2" Height="25" x:Name="TaskNameText" Text="{Binding TaskName}"/>
+            <Button Content="Save Task" Grid.Row="1" Margin="10,0,0,0" Width="100" Command="{Binding SaveCommand}" Height="25" />
+        </StackPanel>
+
+
+        <ListView Width="Auto" ItemsSource="{Binding TaskList}" Grid.Row="3" Background="Gray">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="TaskName" Width="100" DisplayMemberBinding="{Binding TaskName}"></GridViewColumn>
+                    <GridViewColumn Header="Task Start Time" Width="100" DisplayMemberBinding="{Binding TaskStartTime}"></GridViewColumn>
+                    <GridViewColumn Header="Task End Time" Width="100" DisplayMemberBinding="{Binding TaskEndTime}"></GridViewColumn>
+                    <GridViewColumn Header="Duration" Width="100" DisplayMemberBinding="{Binding TaskDuration}"></GridViewColumn>
+                    <GridViewColumn Width="120" Header="Action">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Tag="Start" Content="Start" Command="{Binding StartCommand}" Width="100" Height="Auto"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Width="120" Header="Action">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Tag="Stop" Content="Stop" Command="{Binding StopCommand}" Width="100" Height="Auto"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Width="120" Header="Action">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Tag="Discard" Content="Discard" Command="{Binding DiscardCommand}" Width="100" Height="Auto"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

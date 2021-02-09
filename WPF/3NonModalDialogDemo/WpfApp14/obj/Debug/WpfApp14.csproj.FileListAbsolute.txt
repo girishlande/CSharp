@@ -1,0 +1,16 @@
+D:\test\WpfApp14\WpfApp14\bin\Debug\WpfApp14.exe.config
+D:\test\WpfApp14\WpfApp14\bin\Debug\WpfApp14.exe
+D:\test\WpfApp14\WpfApp14\bin\Debug\WpfApp14.pdb
+D:\test\WpfApp14\WpfApp14\obj\Debug\MainWindow.g.cs
+D:\test\WpfApp14\WpfApp14\obj\Debug\UserAction.g.cs
+D:\test\WpfApp14\WpfApp14\obj\Debug\App.g.cs
+D:\test\WpfApp14\WpfApp14\obj\Debug\WpfApp14_MarkupCompile.cache
+D:\test\WpfApp14\WpfApp14\obj\Debug\WpfApp14_MarkupCompile.lref
+D:\test\WpfApp14\WpfApp14\obj\Debug\MainWindow.baml
+D:\test\WpfApp14\WpfApp14\obj\Debug\UserAction.baml
+D:\test\WpfApp14\WpfApp14\obj\Debug\WpfApp14.g.resources
+D:\test\WpfApp14\WpfApp14\obj\Debug\WpfApp14.Properties.Resources.resources
+D:\test\WpfApp14\WpfApp14\obj\Debug\WpfApp14.csproj.GenerateResource.cache
+D:\test\WpfApp14\WpfApp14\obj\Debug\WpfApp14.csproj.CoreCompileInputs.cache
+D:\test\WpfApp14\WpfApp14\obj\Debug\WpfApp14.exe
+D:\test\WpfApp14\WpfApp14\obj\Debug\WpfApp14.pdb

@@ -54,6 +54,9 @@ namespace WpfApp1
         {
             Action action = () => txtMessage.Text = message;
             Dispatcher.Invoke(action);
+			
+			
+			Dispatcher.Invoke(() => txtMessage.Text = message);
         }
 
     }

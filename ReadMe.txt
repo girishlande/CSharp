@@ -4,5 +4,7 @@ Following link has useful data about UI threads and how to update UI from differ
 http://www.albahari.com/threading/part2.aspx#_Rich_Client_Applications
 
 
+//  Want to print some logs ?
+Use Debug.WriteLine() for printing log information 
 
 	
