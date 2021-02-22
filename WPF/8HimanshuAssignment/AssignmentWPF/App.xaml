@@ -1,0 +1,9 @@
+﻿<Application x:Class="AssignmentWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Startup="Application_Startup"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:AssignmentWPF" DispatcherUnhandledException="Application_DispatcherUnhandledException"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
