@@ -71,6 +71,7 @@ namespace WebApplication10.Controllers
 9. Run application and test application with api address 
 e. g http:12345:/api/students
 (this will invoke get operation)
+http://localhost:58271/api/students/1
 
 Test all four operations using POSTMan software using following argument to add data
 Add following in Body 
@@ -83,5 +84,15 @@ Add following in Body
 10. You Don't need POST man to test you api. You can install swashbuckle from nuget package manager 
 and then hit following address
 http:12345:/swagger
+
+
+NOTE 
+You need to have IIS enabled on your windows machine
+
+>>Enabling IIS and required IIS components on Windows 10
+1. Open Control Panel and click Programs and Features > Turn Windows features on or off.
+2. Enable Internet Information Services.
+3. Expand the Internet Information Services feature and verify that the web server components listed in the next section are enabled.
+Click OK.
 
 
