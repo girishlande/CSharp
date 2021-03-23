@@ -2,6 +2,7 @@
 // Hosting service in console application 
 // Create end point using App.config (DECLARATIVE method ) 
 // -------------------------------------------------------------------------------
+IMPORTANT: THIS WILL NOT WORK ON DOMAIN MACHINE WHICH IS NOT IN DOMAIN 
 
 > Create new C# project
 > Select WCF Service Library 
@@ -9,13 +10,13 @@
 > Rename Default interface as IGirish
 > Rename default service class as Girish
 > Build and run. Check that service can be run using visual studio hosting
-> Then add new project "GirishConsoleHost"
+> Then add new project "GirishConsoleHost" (Console .NET framework)
 > Add reference of System.ServiceModel 
 > Add reference of Local project GirishLibrary
 > Declare end points in App.config
 
 > Create new project in another solution. For writing client application 
-> Select console application typeof
+> Select console application (Console .NET framework)
 > Right click on project and select Add service reference
 > Use address of service as per config file . for e.g net.tcp://localhost:9090/MyTcpEndPoint
 > Now create proxy client object and invoke method of service. 

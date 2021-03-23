@@ -46,6 +46,7 @@ App.xaml
         <TextBlock Style="{StaticResource HeaderStyle}">Header 2</TextBlock>
         <TextBlock>Header 3</TextBlock>
     </StackPanel>
+
 	
 >> Apply style to all buttons
 -----------------------------------
@@ -62,3 +63,20 @@ App.xaml
             </Style.Triggers>
         </Style>
     </Window.Resources>
+	
+// --------------------------------------------------------------------------------------	
+// Changed style of listview TO make sure that there is no highlighting of the elements
+// --------------------------------------------------------------------------------------	
+<Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ListViewItem}">
+                                    <Border
+                         BorderBrush="Transparent"
+                         BorderThickness="0"
+                         Background="{TemplateBinding Background}">
+                                        <GridViewRowPresenter HorizontalAlignment="Stretch" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Width="Auto" Margin="0" Content="{TemplateBinding Content}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+						
