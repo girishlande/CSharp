@@ -96,3 +96,34 @@ You need to have IIS enabled on your windows machine
 Click OK.
 
 
+// -----------------------
+// Hosting the api 
+// -----------------------
+
+Start run prompt in windows 
+>inetmgr
+
+this will open IIS configuration manager 
+Expand Sites -> Default web site 
+Right click default web site and add virtual directory 
+Give some alias
+Then give path of the project where you have created above api 
+then Right click on alias and select convert to application 
+Now right click again -> manage application and Browe
+Enter /api/student 
+
+// -----------------------------------------
+// Consuming the api in another application 
+// -----------------------------------------
+
+            text1.Content = "hello Girish";
+            var client = new HttpClient();
+            client.BaseAddress = new Uri("http://localhost/girish1/");
+            HttpResponseMessage response = await client.GetAsync("api/student");
+            string result = await response.Content.ReadAsStringAsync();
+            text1.Content = result;
+
+
+
+
+
