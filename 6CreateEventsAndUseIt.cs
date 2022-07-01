@@ -1,4 +1,6 @@
-﻿using System;
+﻿// How custom events can be written in C# and how to use it. 
+
+using System;
 using System.Threading;
 
 namespace ConsoleApp1
